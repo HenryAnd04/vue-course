@@ -1,16 +1,12 @@
 <script setup>
-import NavBar from './components/NavBar.vue'; 
-import Hero from './components/Hero.vue';
-import Jobs from './components/Jobs.vue';
-import logo from './assets/logo.jpg';
-
+  import NavBar from './components/NavBar.vue'; 
+  import { RouterView } from 'vue-router';
 </script>
 
 <template>
   <section class="app">
-    <NavBar logo="logo"/>
-    <Hero/>
-    <Jobs/>
+    <NavBar/>
+    <RouterView/>
   </section>
 </template>
 

@@ -1,25 +1,18 @@
 <script>
-import { defineProps } from 'vue';
-//import logo from '../assets/logo.jpg';
-
-/* defineProps({
-    logo: {
-        type: String
-    }
-}) */
+    import { RouterLink } from 'vue-router';
 </script>
 
 <template>
 
     <header>
         <div class="header-logo">
-            <img src="../assets//logo.jpg" alt="Logo vue">
+            <h1>Henry APP</h1>
         </div>
 
         <div class="header-links">
-            <a href="#">Services</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <RouterLink to="/">Services</RouterLink>
+            <RouterLink to="/jobs">About</RouterLink>
+            <RouterLink to="/contact">Contact</RouterLink>
         </div>
     </header>
 
